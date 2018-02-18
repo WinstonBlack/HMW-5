@@ -6,7 +6,7 @@ var colors = [];
 function setup() {
 	createCanvas(400, 400);
 
-	for (var index = 0; index < 20; index = index + 1) {
+	for (var index = 0; index < 25; index = index + 1) {
 		x[index] = random(225, 240);
 		y[index] = 220;
 
@@ -20,17 +20,20 @@ function draw() {
 	noStroke();
 
 	// draw pipe
+	fill('white')
 	rect(0, 200, 220, 20);
 
 	// draw drip
-	for (var index = 0; index < 20; index = index + 1) {
+	for (var index = 0; index < 25; index = index + 1) {
 		fill(colors[index]);
 		ellipse(x[index],y[index],10);
 		y[index] = y[index] + ySpeed[index];
-}
-	 if (y[index] > 19) {
+		
+		 if (y [index] > height) {
     // reset
     y[index] = 220;
 		 x[index] = random(225, 240);
   }
+}
+	 
 }
