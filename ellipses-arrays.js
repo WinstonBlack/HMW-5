@@ -29,10 +29,5 @@ function draw() {
 		y[index] = y[index] + ySpeed[index];
 
 
-		// down 3 pixels each frame, but maybe should be accelerating?
-		y[index] = y[index] + 1
-
-		// if invisible for a full “height” amount…
-
 	}
 }
