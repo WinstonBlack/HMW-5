@@ -7,10 +7,10 @@ function setup() {
 	createCanvas(400, 400);
 
 	for (var index = 0; index < 20; index = index + 1) {
-		x[index] = 230;
+		x[index] = random(225, 240);
 		y[index] = 220;
 
-		ySpeed[index] = 5;
+		ySpeed[index] = random(3, 6);
 		colors[index] = color(random(255), random(255), random(255))
 	}
 }
@@ -27,7 +27,10 @@ function draw() {
 		fill(colors[index]);
 		ellipse(x[index],y[index],10);
 		y[index] = y[index] + ySpeed[index];
-
-
-	}
+}
+	 if (y[index] > 19) {
+    // reset
+    y[index] = 220;
+		 x[index] = random(225, 240);
+  }
 }
