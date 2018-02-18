@@ -10,7 +10,7 @@ function setup() {
     x[index] = 210;
     y[index] = 290;
     r[index] = 0;
-		multi[index] = random(-10, 10);
+		multi[index] = random(-10, 20);
  
   }
 }
