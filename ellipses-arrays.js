@@ -8,8 +8,8 @@ function setup() {
 	createCanvas(400, 400);
 
 	for (var index = 0; index < 50; index = index + 1) {
-		x[index] = random(width);
-		y[index] = random(height);
+		x[index] = random(150,250);
+		y[index] = random(0,400);
 		d[index] = random(5, 20);
 		colors[index] = color(random(255), random(255), random(255))
 
