@@ -11,7 +11,7 @@ function setup() {
 		y[index] = 220;
 
 		ySpeed[index] = random(3, 6);
-		colors[index] = color(random(200), random(200), random(100)
+		colors[index] = color(random(200), random(200), random(100))
 	}
 }
 
