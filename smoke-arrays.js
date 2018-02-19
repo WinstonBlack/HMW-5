@@ -3,11 +3,13 @@ var y = [];
 var r = [];
 var ySpeed = [];
 var xSpeed = [];
+var colors = [];
 
 
 
 function setup() {
 	createCanvas(400, 400);
+	colorMode(HSB);
 
 	for (var index = 0; index < 100; index = index + 1) {
 		x[index] = 210;
@@ -15,6 +17,7 @@ function setup() {
 		r[index] = 0;
 		ySpeed[index] = random(1,5)
 		xSpeed[index] = random(-2,2)
+		colors[index] = color(random(240-60),20,30)
 
 
 	}
@@ -37,7 +40,8 @@ function draw() {
 		translate(x[index], y[index]);
 		rotate(r[index]);
 		// draw rectangle
-		ellipse(-10, -10, 20);
+		fill(colors[index]);
+		 rect(-10, -10, 20, 20);
 		// reset rotation and translation
 		pop();
 
