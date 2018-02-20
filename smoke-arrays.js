@@ -3,7 +3,7 @@ var y = [];
 var r = [];
 var ySpeed = [];
 var xSpeed = [];
-var colors = [];
+
 
 
 
@@ -17,7 +17,7 @@ function setup() {
 		r[index] = 0;
 		ySpeed[index] = random(1,5)
 		xSpeed[index] = random(-2,2)
-		colors[index] = color(random(240-60),20,30)
+	
 
 
 	}
@@ -40,7 +40,7 @@ function draw() {
 		translate(x[index], y[index]);
 		rotate(r[index]);
 		// draw rectangle
-		fill(colors[index]);
+		
 		 rect(-10, -10, 20, 20);
 		// reset rotation and translation
 		pop();
